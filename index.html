@@ -139,12 +139,22 @@
 					<p>The on button publishes the message 2-40 to topic house/room1/1</p>
 					<p>The off button publishes the message 2-41 to topic house/room1/1</p>
 					<p>The Arduino subscribes to house/room1/1 and depending upon the message it recieves will turn the lamp on or off</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+					<pre><code data-trim style="font-size: 18px; margin-top: 20px;">
 					
 house/room1/1 2-40
 house/room1/1 2-41
 					</code></pre>
-					
+				</section>
+
+				<section>
+					<h2>That was fairly simple??</h2>
+					<p>Messages could have a fairly complex payload, images, JSON strings. A lot of projects are now either using or considering MQTT as the API for their application.</p>
+					<li class="fragment">Owntracks - uses JSON strings over MQTT to report GPS data</li>
+					<li class="fragment">Android/IOS applications using MQTT for API services</li>
+					<li class="fragment">Web applications using MQTT over websockets for extra functionality</li>
+					<pre><code data-trim style="font-size: 18px; margin-top: 20px;">{"_type": "location", "lat": "53.6897209", "lon": "-2.2991612", "tst": "1396091441", "acc": "10.0", "batt": "85"}</code></pre> 
+				</section>
+							
 			</div>
 
 		</div>
